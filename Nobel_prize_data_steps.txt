@@ -1,0 +1,23 @@
+Data file: nobel_prize_data.csv
+Time Range: 1901 - 2020
+Project step by step:
+
+1. Import data to PowerBI
+2. Use transform data function to clean and change data type
+3. Check duplication
+4. Change birthday column format to Date
+5. Any error in birthday column after formatting are replace to '0001-01-01'
+6. Fill any empty space with NA
+7. Duplicate prize_share column, then split the column before (numerator) and after delimiter (denomenator).
+8. Add new column name 'share_pct' which is numerator divide denomenator and change type to percentage
+9. Use DAX (COUNTAX, FILTER, SUMMARIZE) to find out the Repeat Individual Winners and Repeat Organization Winners
+10. Visualize these information with PowerBI:
+	- Number of Nobel Prize Category
+	- Number of Individual Winners
+	- Number of Organization Winners
+	- Number of Repeat Individual Winners
+	- Number of Repeat Organization Winners
+	- Comparing number of Winners by Gender
+	- Number of Prizes Awarded Per Category (Breakdown to Gender)
+	- Top 10 Countries Win Most Awards (Breakdown to Category)
+	- Top 20 Countries Has Most Awards Over Years
